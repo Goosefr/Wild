@@ -1,0 +1,468 @@
+/*==========================================
+BEGIN - IMPORT
+==========================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Amatic+SC');
+
+/*==========================================
+END - IMPORT
+==========================================*/
+
+/*==========================================
+BEGIN - BASE
+==========================================*/
+
+html,
+body {
+    font-size: 10px;
+    color: #202020;
+    font-family: 'Arvo', Arial, Helvetica, sans-serif;
+
+    background: url(http://jim2022.fr/img/circusFront.png) no-repeat center top fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+*:focus {
+    outline: none;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    max-width: 100%;
+}
+
+nav {
+    font-family: 'Amatic SC', cursive;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button,
+a span {
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 1rem 1rem 1rem 0;
+    font-size: 1.6rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.uneditable-input {
+    outline: none;
+}
+
+.form-control {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: #f56363;
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 9rem;
+}
+
+h2 {
+    font-size: 7rem;
+}
+
+h3 {
+    font-size: 5rem;
+    color: #ff0000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+/*==========================================
+END - BASE
+==========================================*/
+
+/*==========================================
+BEGIN - SECTIONS
+==========================================*/
+
+section {
+    background-color: #ffffff;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.overlay h2 {
+    color: #ffffff;
+}
+
+/* For Home Section */
+
+.home-details {
+    margin-top: 150px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+.home-details .logo {
+    margin-bottom: 50px;
+}
+
+/* For About Section */
+
+.about-content,
+.about-photo {
+    margin-top: 40px;
+}
+
+.about-content .signature {
+    margin-top: 50px;
+}
+
+/* For Performances Section */
+
+ul #perfList {
+    list-style: none;
+}
+
+#perfList > li {
+    float: left;
+    display: inline-block;
+    width: 33%;
+}
+
+
+/* For Portfolio Section */
+
+.portfolio {
+    background: url(http://jim2022.fr/img/circusFront.png) no-repeat center top fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio .title h3 {
+    color: #f1f1f1;
+}
+
+.portfolio-wrapper {
+    width: 100%;
+    margin-left: -20px;
+    text-align: center;
+}
+
+.portfolio-item {
+    display: inline-block;
+    overflow: hidden;
+    width: 17%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.portfolio-details {
+    width: 100%;
+    height: 250px;
+}
+
+.portfolio-details img {
+    width: 100%;
+}
+
+.logo img {
+    border-radius: 150px;
+}
+
+/* For Contact Section */
+
+.footer {
+    background-color: #474747;
+}
+
+.footer a {
+    color: ##337ab7;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+.social a {
+    font-size: 30px;
+    border: 2px solid #337ab7;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social a:hover {
+    border-color: red;
+}
+
+/* For Footer Section */
+
+#contact_btn {
+    margin: 20px 0;
+}
+
+.copyright {
+    border-top: 1px solid #bebebe;
+    padding: 30px 0;
+}
+
+.copyright p {
+    color: #Bebebe;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+/*==========================================
+END - SECTIONS
+==========================================*/
+
+/*
+Separator
+*/
+
+.scroll-down {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10rem;
+    margin: 50px 0;
+    color: #c0c0c0;
+}
+
+.scroll-down a {
+    font-size: 50px;
+    color: #c0c0c0;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+}
+
+.overlay .scroll-down a {
+    color: #ffffff;
+}
+
+.overlay .scroll-down {
+    color: #ffffff;
+}
+
+
+
+.scroll-down a:hover {
+    color: red;
+}
+
+/*==========================================
+BEGIN - NAVIGATION
+==========================================*/
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: #e7e7e7;
+    margin: 0 auto;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #f1f1f1;
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 0;
+}
+
+.navbar-default .navbar-nav > li:last-child {
+    margin-right: 40px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #f1f1f1;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: red;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: red;
+    background-color: transparent;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-toggle {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.menu-bg {
+    background: #474747;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+
+/*==========================================
+END - NAVIGATION
+==========================================*/
+
+/* Snippet courtesy of: http://littlesnippets.net */
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip0001 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    border: 4px solid #222222;
+    width: 100%;
+    background: #222222;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.snip0001 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.snip0001 img {
+    max-width: 100%;
+    min-height: 250px;
+    opacity: 1.0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+figure.snip0001 > div a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+figure.snip0001 > div a i {
+    display: inline-block;
+    font-size: 58px;
+    opacity: 0;
+    top: 55%;
+    position: relative;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+figure.snip0001:hover img {
+    opacity: 0.3;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+figure.snip0001:hover > div i {
+    opacity: 0.8;
+    top: 50%;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
